@@ -24,3 +24,16 @@ def znajdz_najwiekszy_element_listy(lista):
 # - W przeciwnym razie, dzielimy listę na pierwszy element i resztę listy.
 # - Rekurencyjnie znajdujemy największy element w reszcie listy.
 # - Porównujemy pierwszy element z największym elementem w reszcie i zwracamy większy z nich.
+
+def silnia(s):
+   if s == 0:
+       return 1
+   else:
+       return s * silnia(s-1)
+
+
+# Proces:
+# Jeżeli s wynosi 0, zwracamy 1 (warunek końcowy)
+#  Jeśli nie, zwracamy iloczyn s i silni z (s-1)
+# Wywołujemy funkcję rekurencyjnie dla liczby mniejszej o 1
+
